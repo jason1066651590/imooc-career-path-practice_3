@@ -1,0 +1,6 @@
+@mixin circle($bgcolor,$width: 50px,$height: 50px) {
+  background-color: $bgcolor;
+  width: $width;
+  height: $height;
+  position: absolute;
+}

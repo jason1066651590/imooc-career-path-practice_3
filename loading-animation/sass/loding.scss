@@ -1,0 +1,36 @@
+@import "mixin";
+$circleLeft: calc(50% - 25px);
+$circleTop: calc(50% - 25px);
+$containerWH: 300px;
+
+.top {
+    @include circle(red);
+    top: 0;
+    left: $circleLeft
+}
+
+.right {
+    @include circle(green);
+    right: 0;
+    top: $circleTop;
+}
+
+.bottom {
+    @include circle(blue);
+    bottom: 0;
+    left: $circleLeft;
+}
+
+.left {
+    @include circle(yellow);
+    left: 0;
+    top: $circleTop;
+}
+
+.container {
+    position: absolute;
+    width: $containerWH;
+    height: $containerWH;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
